@@ -1,4 +1,4 @@
-project(cuda-learning)
+project(learning-cuda)
 
 cmake_minimum_required(VERSION 2.8)
 

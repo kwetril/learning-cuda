@@ -1,1 +1,2 @@
 add_subdirectory(add_vectors)
+add_subdirectory(device_info)
