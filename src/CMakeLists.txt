@@ -1,2 +1,3 @@
 add_subdirectory(add_vectors)
 add_subdirectory(device_info)
+add_subdirectory(rgb_to_gray)
