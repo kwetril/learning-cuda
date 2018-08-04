@@ -1,5 +1,5 @@
 include_directories(
-  "${ROOT_DIR}/src/lib/include"
+  "${ROOT_DIR}/src/lib"
 )
 
 cuda_add_executable(rgb_to_gray main.cpp)
