@@ -2,8 +2,8 @@
 #include "util/vector_utils.hpp"
 
 #include <iostream>
-#include <stdlib.h>
-#include <time.h>
+#include <cstdlib>
+#include <ctime>
 
 
 int main()
