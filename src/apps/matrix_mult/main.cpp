@@ -26,14 +26,20 @@ int main()
 
   timer.Start();
   cv::Mat const cvMult = first * second;
-  double cvTime = timer.Stop();
+  double const cvTime = timer.Stop();
 
   timer.Start();
   cv::Mat const cudaMult = MatrixMult(first, second);
-  double cudaTime = timer.Stop();
+  double const cudaTime = timer.Stop();
+
+  timer.Start();
+  cv::Mat const cudaTiledMult = TiledMatrixMult(first, second);
+  double const cudaTiledTime = timer.Stop();
 
   std::cout << "MSE[OpenCV, CUDA]: " << MatrixDiffMSE(cvMult, cudaMult) << std::endl;
+  std::cout << "MSE[OpenCV, CUDA tiled]: " << MatrixDiffMSE(cvMult, cudaTiledMult) << std::endl;
   std::cout << "OpenCV time: " << cvTime << " ms" << std::endl;
   std::cout << "CUDA time: " << cudaTime << " ms" << std::endl;
+  std::cout << "CUDA tiled time: " << cudaTiledTime << " ms" << std::endl;
   return 0;
 }

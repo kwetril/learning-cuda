@@ -7,8 +7,8 @@
 namespace learn_cuda
 {
 
-cv::Mat MatrixFill(cv::Mat & matrix, double minValue, double maxValue);
-
 cv::Mat MatrixMult(cv::Mat const & first, cv::Mat const & second);
+
+cv::Mat TiledMatrixMult(cv::Mat const & first, cv::Mat const & second);
 
 }
