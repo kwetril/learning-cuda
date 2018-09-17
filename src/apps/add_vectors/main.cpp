@@ -2,23 +2,21 @@
 #include "util/vector_utils.hpp"
 
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 
 
 int main()
 {
   using namespace learn_cuda;
 
-  int size = 100;
+  size_t const size = 100;
+  size_t const fstSeed = 42;
+  size_t const sndSeed = 123;
   std::vector<float> fst, snd;
 
-  srand(static_cast<unsigned int>(time(NULL)));
-
-  VectorFill(fst, size);
+  VectorFill(fst, size, fstSeed);
   VectorPrint("fst", fst);
 
-  VectorFill(snd, size);
+  VectorFill(snd, size, sndSeed);
   VectorPrint("snd", snd);
 
   std::vector<float> res = VectorAdd(fst, snd);

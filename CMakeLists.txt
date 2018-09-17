@@ -10,7 +10,7 @@ set(ROOT_DIR "${CMAKE_SOURCE_DIR}")
 
 find_package(CUDA REQUIRED)
 
-set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} -std=c++11" )
+set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} -std=c++11 -arch=sm_30" )
 
 include_directories(${CUDA_INCLUDE_DIRS})
 
