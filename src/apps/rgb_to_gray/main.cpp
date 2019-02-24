@@ -8,7 +8,7 @@
 int main()
 {
   using namespace learn_cuda;
-  std::string const rootDir = "..";
+  std::string const rootDir = ".";
   std::string const imgPath = rootDir + "/data/test.png";
   cv::Mat image = cv::imread(imgPath, cv::IMREAD_COLOR);
   if(!image.data)
@@ -25,6 +25,7 @@ int main()
   std::string outputPath = "out.png";
   cv::imwrite(outputPath, grayImage);
   std::cout << "Done" << std::endl;
-
+  cv::imshow("Gray image", grayImage);
+  cv::waitKey();
   return 0;
 }

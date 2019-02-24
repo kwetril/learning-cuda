@@ -1,4 +1,4 @@
-#include <algorithm>
+#include <numeric>
 #include <iostream>
 
 #include "wrappers/vector_sum.hpp"

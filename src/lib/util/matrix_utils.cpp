@@ -1,3 +1,4 @@
+#include <random>
 #include "util/matrix_utils.hpp"
 
 namespace learn_cuda

@@ -1,5 +1,3 @@
-#pragma once
-
 #include "wrappers/rgb_to_gray.hpp"
 #include "kernels/rgb_to_gray.hpp"
 

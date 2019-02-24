@@ -8,7 +8,7 @@
 int main()
 {
   using namespace learn_cuda;
-  std::string const rootDir = "..";
+  std::string const rootDir = ".";
   std::string const imgPath = rootDir + "/data/test.png";
   cv::Mat image = cv::imread(imgPath, cv::IMREAD_COLOR);
   if(!image.data)

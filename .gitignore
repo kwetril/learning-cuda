@@ -36,5 +36,9 @@
 .cproject
 .project
 
+# CLion
+.idea/
+cmake-*
+
 # build
 build/
